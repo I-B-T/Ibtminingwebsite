@@ -1,0 +1,92 @@
+index.html<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IBT Mining App</title>
+
+<style>
+*{margin:0; padding:0; box-sizing:border-box; font-family: Arial;}
+
+body{
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color:white;
+}
+
+.header{
+  padding:20px;
+  text-align:center;
+  background:rgba(0,0,0,0.3);
+}
+
+.dashboard{
+  padding:30px;
+  text-align:center;
+}
+
+.card{
+  background:rgba(255,255,255,0.1);
+  padding:25px;
+  border-radius:20px;
+  margin:20px auto;
+  width:300px;
+  box-shadow:0 0 15px rgba(0,198,255,0.5);
+}
+
+.balance{
+  font-size:26px;
+  margin:15px 0;
+}
+
+button{
+  padding:15px 35px;
+  border:none;
+  border-radius:30px;
+  font-size:18px;
+  background:#00c6ff;
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  background:#0072ff;
+  transform:scale(1.05);
+}
+
+.stats{
+  margin-top:20px;
+  font-size:14px;
+  color:#ddd;
+}
+
+.footer{
+  text-align:center;
+  padding:15px;
+  background:rgba(0,0,0,0.3);
+  margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+  <h1>IBT MINING</h1>
+  <p>Secure Cloud Mining Platform</p>
+</div>
+
+<div class="dashboard">
+  <div class="card">
+    <h2>Your Balance</h2>
+    <div class="balance"><span id="coins">0</span> IBT</div>
+    <button onclick="mine()">Start Mining</button>
+
+    <div class="stats">
+      Mining Reward: 5 IBT per click <br>
+      Cooldown: 3 seconds
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  © 2026 IBT Mining. All Rights
